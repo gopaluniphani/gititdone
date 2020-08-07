@@ -11,7 +11,7 @@ const Doctors = (props) => {
       <div className="container">
         <div className="row">
           {doctors.map((doctor) => (
-            <div key={doctor.id} className="col s12 m6">
+            <div key={doctor.id} className="col s12 m12 l6">
               <ProfileCard profile={doctor} />
             </div>
           ))}

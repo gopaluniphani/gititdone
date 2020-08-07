@@ -11,7 +11,7 @@ const Lawyers = (props) => {
       <div className="container">
         <div className="row">
           {lawyers.map((lawyer) => (
-            <div key={lawyer.id} className="col s12 m6">
+            <div key={lawyer.id} className="col s12 m12 l6">
               <ProfileCard profile={lawyer} />
             </div>
           ))}

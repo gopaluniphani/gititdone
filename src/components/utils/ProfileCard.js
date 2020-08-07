@@ -6,7 +6,9 @@ const ProfileCard = ({ profile }) => {
       <div className="row valign-wrapper">
         <div className="col s4">
           {!profile.url ? (
-            <i className="material-icons medium">person</i>
+            <p className="center">
+              <i className="material-icons medium">person</i>
+            </p>
           ) : (
             <img src={profile.url} alt="" className="circle responsive-img" />
           )}
