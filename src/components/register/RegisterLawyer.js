@@ -27,7 +27,6 @@ class RegisterLawyer extends Component {
   onSubmit = async (e) => {
     e.preventDefault();
     const { image, ...lawyer } = this.state;
-    console.log(image, lawyer);
     this.props.registerLawyer(lawyer, image);
     this.setState({
       image: null,
@@ -65,6 +64,7 @@ class RegisterLawyer extends Component {
                 <input
                   onChange={this.onChange}
                   name="first_name"
+                  id="first_name"
                   type="text"
                   className="validate"
                   value={this.state.first_name}
@@ -75,6 +75,7 @@ class RegisterLawyer extends Component {
                 <input
                   onChange={this.onChange}
                   name="last_name"
+                  id="last_name"
                   type="text"
                   className="validate"
                   value={this.state.last_name}
@@ -87,6 +88,7 @@ class RegisterLawyer extends Component {
                 <input
                   onChange={this.onChange}
                   name="email"
+                  id="email"
                   type="email"
                   className="validate"
                   value={this.state.email}
@@ -99,6 +101,7 @@ class RegisterLawyer extends Component {
                 <input
                   onChange={this.onChange}
                   name="phone"
+                  id="phone"
                   type="text"
                   className="validate"
                   value={this.state.phone}
@@ -111,6 +114,7 @@ class RegisterLawyer extends Component {
                 <input
                   onChange={this.onChange}
                   name="expertise"
+                  id="expertise"
                   type="text"
                   className="validate"
                   value={this.state.expertise}

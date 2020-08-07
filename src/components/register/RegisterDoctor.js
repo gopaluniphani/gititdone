@@ -63,6 +63,7 @@ class RegisterDoctor extends Component {
                 <input
                   onChange={this.onChange}
                   name="first_name"
+                  id="first_name"
                   type="text"
                   className="validate"
                   value={this.state.first_name}
@@ -73,6 +74,7 @@ class RegisterDoctor extends Component {
                 <input
                   onChange={this.onChange}
                   name="last_name"
+                  id="last_name"
                   type="text"
                   className="validate"
                   value={this.state.last_name}
@@ -85,6 +87,7 @@ class RegisterDoctor extends Component {
                 <input
                   onChange={this.onChange}
                   name="email"
+                  id="email"
                   type="email"
                   className="validate"
                   value={this.state.email}
@@ -97,6 +100,7 @@ class RegisterDoctor extends Component {
                 <input
                   onChange={this.onChange}
                   name="phone"
+                  id="phone"
                   type="text"
                   className="validate"
                   value={this.state.phone}
@@ -109,6 +113,7 @@ class RegisterDoctor extends Component {
                 <input
                   onChange={this.onChange}
                   name="specialization"
+                  id="specialization"
                   type="text"
                   className="validate"
                   value={this.state.specialization}
