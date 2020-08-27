@@ -7,12 +7,14 @@ import Register from "./components/register/Register";
 import Doctors from "./components/Doctors";
 import Lawyers from "./components/Lawyers";
 import Contact from "./components/Contact";
+import ChatBotWidget from "./components/ChatBotWidget";
 
 function App(props) {
   return (
     <Router>
       <Fragment>
         <Navbar />
+        <ChatBotWidget />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/lawyers" component={Lawyers} />
