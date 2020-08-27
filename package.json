@@ -10,6 +10,7 @@
     "firebase": "^7.17.1",
     "fontsource-roboto": "^2.2.6",
     "materialize-css": "^1.0.0-rc.2",
+    "rasa-webchat": "^0.11.5",
     "react": "^16.13.1",
     "react-alert": "^7.0.2",
     "react-alert-template-basic": "^1.0.0",
@@ -21,6 +22,7 @@
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
+    "socket.io": "^2.3.0",
     "uuidv4": "^6.2.2"
   },
   "scripts": {
