@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
+import M from "materialize-css";
 
 import { registerLawyer } from "../../actions/register";
 
@@ -12,7 +13,7 @@ class RegisterLawyer extends Component {
       last_name: "",
       email: "",
       phone: "",
-      expertise: "",
+      expertise: "0",
     };
   }
 
@@ -24,6 +25,11 @@ class RegisterLawyer extends Component {
     this.setState({ ...this.state, image: e.target.files[0] });
   };
 
+  componentDidMount() {
+    let elems = document.querySelectorAll("select");
+    M.FormSelect.init(elems, {});
+  }
+
   onSubmit = async (e) => {
     e.preventDefault();
     const { image, ...lawyer } = this.state;
@@ -34,7 +40,7 @@ class RegisterLawyer extends Component {
       last_name: "",
       email: "",
       phone: "",
-      expertise: "",
+      expertise: "0",
     });
   };
 
@@ -111,15 +117,23 @@ class RegisterLawyer extends Component {
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input
-                  onChange={this.onChange}
-                  name="expertise"
-                  id="expertise"
-                  type="text"
-                  className="validate"
+              <select
                   value={this.state.expertise}
-                />
-                <label htmlFor="expertise">Expertise</label>
+                  onChange={this.onChange}
+                >
+                  <option value="0" disabled selected>
+                    Choose an Option
+                  </option>
+                  <option value="Criminal">Criminal</option>
+                  <option value="Corporate">Corporate</option>
+                  <option value="Patent">Patent</option>
+                  <option value="International">International</option>
+                  <option value="Civil">Civil</option>
+                  <option value="IP">IP</option>
+                  <option value="Labour">Labour</option>
+                  <option value="Tax">Tax</option>
+                </select>
+                <label>Expertise </label>
               </div>
             </div>
             <div className="row">

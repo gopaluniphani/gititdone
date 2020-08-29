@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
+import M from "materialize-css";
+
 import { registerDoctor } from "../../actions/register";
 
 class RegisterDoctor extends Component {
@@ -11,8 +13,13 @@ class RegisterDoctor extends Component {
       last_name: "",
       email: "",
       phone: "",
-      specialization: "",
+      specialization: "0",
     };
+  }
+
+  componentDidMount() {
+    let elems = document.querySelectorAll("select");
+    M.FormSelect.init(elems, {});
   }
 
   onChange = (e) => {
@@ -33,7 +40,7 @@ class RegisterDoctor extends Component {
       last_name: "",
       email: "",
       phone: "",
-      specialization: "",
+      specialization: "0",
     });
   };
 
@@ -110,15 +117,23 @@ class RegisterDoctor extends Component {
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input
-                  onChange={this.onChange}
-                  name="specialization"
-                  id="specialization"
-                  type="text"
-                  className="validate"
+                <select
                   value={this.state.specialization}
-                />
-                <label htmlFor="specialization">Specialization</label>
+                  onChange={this.onChange}
+                >
+                  <option value="0" disabled selected>
+                    Choose an Option
+                  </option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Opthomology">Opthomology</option>
+                  <option value="Dermatology">Dermatology</option>
+                  <option value="Gynecology">Gynecology</option>
+                  <option value="Dentist">Dentist</option>
+                  <option value="Gastroentrology">Gastroentrology</option>
+                  <option value="Pediatrician">Pediatrician</option>
+                </select>
+                <label>Specialization </label>
               </div>
             </div>
             <div className="row">

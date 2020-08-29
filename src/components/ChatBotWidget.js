@@ -7,8 +7,10 @@ const ChatBotWidget = () => {
     <Widget
       socketUrl={"https://getitdonebot.eastasia.cloudapp.azure.com"}
       socketPath={"/socket.io/"}
-      customData={{"language": "en"}}
       title={"GetItDone"}
+      params={{
+        storage: "session"
+      }}
     />
   )
 }
