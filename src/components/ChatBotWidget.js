@@ -8,9 +8,11 @@ const ChatBotWidget = () => {
       socketUrl={"https://getitdonebot.eastasia.cloudapp.azure.com"}
       socketPath={"/socket.io/"}
       title={"GetItDone"}
+      customData={{"language": "en"}}
       params={{
         storage: "session"
       }}
+      showMessageDate={true}
     />
   )
 }

@@ -118,10 +118,12 @@ class RegisterDoctor extends Component {
             <div className="row">
               <div className="input-field col s12">
                 <select
+                  name="specialization"
+                  id="specialization"
                   value={this.state.specialization}
                   onChange={this.onChange}
                 >
-                  <option value="0" disabled selected>
+                  <option value="0" disabled>
                     Choose an Option
                   </option>
                   <option value="Neurology">Neurology</option>

@@ -118,20 +118,22 @@ class RegisterLawyer extends Component {
             <div className="row">
               <div className="input-field col s12">
               <select
+                  name="expertise"
+                  id="expertise"
                   value={this.state.expertise}
                   onChange={this.onChange}
                 >
-                  <option value="0" disabled selected>
+                  <option value="0" disabled>
                     Choose an Option
                   </option>
-                  <option value="Criminal">Criminal</option>
-                  <option value="Corporate">Corporate</option>
-                  <option value="Patent">Patent</option>
-                  <option value="International">International</option>
-                  <option value="Civil">Civil</option>
-                  <option value="IP">IP</option>
-                  <option value="Labour">Labour</option>
-                  <option value="Tax">Tax</option>
+                  <option value="Criminal Law">Criminal Law</option>
+                  <option value="Corporate Law">Corporate Law</option>
+                  <option value="Patent Law">Patent Law</option>
+                  <option value="International Law">International Law</option>
+                  <option value="Civil Law">Civil Law</option>
+                  <option value="IP Law">IP Law</option>
+                  <option value="Labour Law">Labour Law</option>
+                  <option value="Tax Law">Tax Law</option>
                 </select>
                 <label>Expertise </label>
               </div>
