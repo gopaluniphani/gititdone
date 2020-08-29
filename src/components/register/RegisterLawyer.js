@@ -134,6 +134,7 @@ class RegisterLawyer extends Component {
                   <option value="IP Law">IP Law</option>
                   <option value="Labour Law">Labour Law</option>
                   <option value="Tax Law">Tax Law</option>
+                  <option value="Cyber Law">Cyber Law</option>
                 </select>
                 <label>Expertise </label>
               </div>
