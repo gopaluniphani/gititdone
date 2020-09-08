@@ -135,7 +135,7 @@ class RegisterDoctor extends Component {
                   <option value="Gastroentrology">Gastroentrology</option>
                   <option value="Pediatrician">Pediatrician</option>
                   <option value="Orthopedician">Orthopedician</option>
-                  <option value="Pulmonolgy">Pulmonology</option>
+                  <option value="Pulmonology">Pulmonology</option>
                 </select>
                 <label>Specialization </label>
               </div>
