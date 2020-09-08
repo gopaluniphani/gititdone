@@ -74,6 +74,7 @@ class RegisterDoctor extends Component {
                   type="text"
                   className="validate"
                   value={this.state.first_name}
+                  required
                 />
                 <label htmlFor="first_name">First Name</label>
               </div>
@@ -98,6 +99,7 @@ class RegisterDoctor extends Component {
                   type="email"
                   className="validate"
                   value={this.state.email}
+                  required
                 />
                 <label htmlFor="email">Email</label>
               </div>
