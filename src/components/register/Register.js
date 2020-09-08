@@ -29,7 +29,7 @@ const Register = (props) => {
               <option value="1">Lawyer</option>
               <option value="2">Doctor</option>
             </select>
-            <label>I'm a </label>
+            <label>Choose your Profession: </label>
           </div>
         </form>
       </div>
